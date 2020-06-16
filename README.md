@@ -8,7 +8,7 @@ To start run the following commands:
 
 ```sh
 # clone this repository
-git clone https://github.com/conscious-growth/storybook-antd.git
+git clone https://github.com/conscious-growth/CG-UI-Library.git
 
 # enter in the folder
 cd storybook-antd
