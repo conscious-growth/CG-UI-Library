@@ -118,6 +118,4 @@ class DynamicFormItem extends Component {
   }
 }
 
-DynamicFormItem = Form.create()(DynamicFormItem);
- 
 export default DynamicFormItem;

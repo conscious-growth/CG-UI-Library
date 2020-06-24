@@ -69,6 +69,4 @@ class HorizontalLogin extends Component {
 }
 
 
-HorizontalLogin = Form.create()(HorizontalLogin);
- 
 export default HorizontalLogin;

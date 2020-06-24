@@ -16,7 +16,7 @@ import DynamicRules from './DynamicRules';
 import OtherControls from './OtherControls';
 
 class DatePickerPage extends Component {
-  render() { 
+  render() {
     return (
       <Fragment>
         <h1 className="title">Form</h1>
@@ -38,25 +38,25 @@ class DatePickerPage extends Component {
         </ul>
 
         <h2 className="title">Examples:</h2>
-
-        <HorizontalLogin />
-        <LoginForm />
-        <Registration />
-        <AdvencedSearch />
-        <FormInModal />
-        <DynamicFormItem />
-        <TimeControls />
-        <CustomizedFormControls />
-        <StoreFormData />
-        <CustomizedValidation />
-        <CoordinatedControls />
-        <FormLayout />
-        <DynamicRules />
-        <OtherControls />
+        Migrating form v3 to v4
+        {/* <HorizontalLogin /> */}
+        {/* <LoginForm /> */}
+        {/* <Registration /> */}
+        {/* <AdvencedSearch /> */}
+        {/* <FormInModal /> */}
+        {/* <DynamicFormItem /> */}
+        {/* <TimeControls /> */}
+        {/* <CustomizedFormControls /> */}
+        {/* <StoreFormData /> */}
+        {/* <CustomizedValidation /> */}
+        {/* <CoordinatedControls /> */}
+        {/* <FormLayout /> */}
+        {/* <DynamicRules /> */}
+        {/* <OtherControls /> */}
 
       </Fragment>
     );
   }
 }
- 
+
 export default DatePickerPage;

@@ -251,6 +251,5 @@ class Registration extends Component {
   }
 }
 
-Registration = Form.create()(Registration);
  
 export default Registration;

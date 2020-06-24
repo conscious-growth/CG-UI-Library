@@ -1,0 +1,38 @@
+.app-header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.app-header .two-rows-wrapper {
+  line-height: initial;
+  white-space: nowrap;
+}
+
+.app-header .search {
+  margin-right: 10px;
+}
+
+.app-header .two-rows-wrapper.user-info {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.app-header .user-dashboard span.anticon {
+  font-size: 22px;
+}
+
+.app-header .user-balance,
+.app-header .user-dashboard {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .app-header {
+    padding: 0;
+  }
+}

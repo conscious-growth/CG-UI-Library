@@ -1,5 +1,12 @@
-import React, { Component } from 'react';
-import { Steps, Icon } from 'antd';
+import React, { Component } from "react";
+import { Steps, Icon } from "antd";
+
+import {
+  UserOutlined,
+  SolutionOutlined,
+  LoadingOutlined,
+  SmileOutlined,
+} from "@ant-design/icons";
 
 class StepIcon extends Component {
   render() {
@@ -8,14 +15,18 @@ class StepIcon extends Component {
       <section className="example">
         <h3 className="ex-title">Steps With Icon</h3>
         <Steps>
-          <Step status="finish" title="Login" icon={<Icon type="user" />} />
-          <Step status="finish" title="Verification" icon={<Icon type="solution" />} />
-          <Step status="process" title="Pay" icon={<Icon type="loading" />} />
-          <Step status="wait" title="Done" icon={<Icon type="smile-o" />} />
+          <Step status="finish" title="Login" icon={<UserOutlined />} />
+          <Step
+            status="finish"
+            title="Verification"
+            icon={<SolutionOutlined />}
+          />
+          <Step status="process" title="Pay" icon={<LoadingOutlined />} />
+          <Step status="wait" title="Done" icon={<SmileOutlined />} />
         </Steps>
       </section>
     );
   }
 }
- 
+
 export default StepIcon;

@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { Badge, Button, Icon, Switch } from 'antd';
+import React, { Component } from "react";
+import { Badge, Button, Icon, Switch } from "antd";
+import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 
 class Dynamic extends Component {
   state = {
@@ -21,10 +22,10 @@ class Dynamic extends Component {
             </Badge>
             <ButtonGroup className="ml20">
               <Button onClick={this.decline}>
-                <Icon type="minus" />
+                <MinusOutlined />
               </Button>
               <Button onClick={this.increase}>
-                <Icon type="plus" />
+                <PlusOutlined />
               </Button>
             </ButtonGroup>
           </div>
@@ -32,7 +33,11 @@ class Dynamic extends Component {
             <Badge className="badge" dot={this.state.show}>
               <a href="#" className="head-example" />
             </Badge>
-            <Switch className="ml20" onChange={this.onChange} checked={this.state.show} />
+            <Switch
+              className="ml20"
+              onChange={this.onChange}
+              checked={this.state.show}
+            />
           </div>
         </div>
       </section>
@@ -42,7 +47,7 @@ class Dynamic extends Component {
   increase = () => {
     const count = this.state.count + 1;
     this.setState({ count });
-  }
+  };
 
   decline = () => {
     let count = this.state.count - 1;
@@ -50,9 +55,9 @@ class Dynamic extends Component {
       count = 0;
     }
     this.setState({ count });
-  }
+  };
 
-  onChange = show => this.setState({ show });
+  onChange = (show) => this.setState({ show });
 }
- 
+
 export default Dynamic;

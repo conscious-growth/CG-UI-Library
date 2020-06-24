@@ -1,0 +1,41 @@
+.app-sider {
+  background-color: #fff;
+  box-shadow: -7px 0px 13px 0px rgb(0, 0, 0);
+}
+
+.app-sider .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-sider .logo {
+  margin-top: 1em;
+  padding: 0 15px;
+}
+
+.app-sider .footer .paragraph {
+  padding: 0 16px;
+}
+
+.app-sider .footer .copyrights {
+  font-size: 13px;
+}
+
+.app-sider .footer .collapse {
+  text-align: right;
+}
+
+.app-sider .collapse-button {
+  border: 0;
+}
+/* Collapsed sider styles */
+.app-sider.ant-layout-sider-collapsed .footer .collapse {
+  text-align: justify;
+}
+.app-sider.ant-layout-sider-collapsed .collapse-button {
+  padding-left: 16px !important;
+}
+.app-sider.ant-layout-sider-collapsed .logo {
+  padding-left: 20px;
+}

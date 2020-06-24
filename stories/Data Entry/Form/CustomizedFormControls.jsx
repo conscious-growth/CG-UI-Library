@@ -111,6 +111,4 @@ class CustomizedFormControls extends Component {
   }
 }
 
-CustomizedFormControls = Form.create()(CustomizedFormControls);
- 
 export default CustomizedFormControls;

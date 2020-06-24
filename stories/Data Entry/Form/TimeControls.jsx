@@ -123,6 +123,4 @@ class TimeControls extends Component {
   }
 }
 
-TimeControls = Form.create()(TimeControls);
- 
 export default TimeControls;

@@ -84,6 +84,4 @@ class DynamicRules extends Component {
   }
 }
 
-DynamicRules = Form.create()(DynamicRules);
- 
 export default DynamicRules;

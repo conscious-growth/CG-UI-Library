@@ -54,6 +54,4 @@ class LoginForm extends Component {
   }
 }
 
-LoginForm = Form.create()(LoginForm);
- 
 export default LoginForm;

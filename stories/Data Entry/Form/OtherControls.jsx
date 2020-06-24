@@ -194,6 +194,5 @@ class OtherControls extends Component {
   }
 }
 
-OtherControls = Form.create()(OtherControls);
  
 export default OtherControls;

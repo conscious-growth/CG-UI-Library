@@ -77,6 +77,4 @@ class AdvencedSearch extends Component {
   }
 }
 
-AdvencedSearch = Form.create()(AdvencedSearch);
- 
 export default AdvencedSearch;
