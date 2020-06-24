@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Layout } from "antd";
+import { Layout, PageHeader, Empty } from "antd";
 const { Content } = Layout;
 
 import { AppHeader } from "../Header/default";
@@ -12,7 +12,10 @@ export default () => {
         <AppSider></AppSider>
         <Layout style={{ padding: "0 5px" }}>
           <AppHeader></AppHeader>
-          <Content style={{ padding: "0 30px" }}>Main Content</Content>
+          <Content>
+            <PageHeader title="Example page"></PageHeader>
+            <Empty />
+          </Content>
         </Layout>
       </Layout>
     </Fragment>
