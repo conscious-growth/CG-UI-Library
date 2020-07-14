@@ -4,10 +4,8 @@ import { storiesOf } from '@storybook/react';
 import Composed from './AppLayout';
 import Sider from './Sider';
 import AppHeader from './Header';
-import AppDrawer from './Drawer';
 
 storiesOf('Layout', module)
     .add('Composed', () => <Composed />)
     .add('Sider', () => <Sider />)
     .add('Header', () => <AppHeader />)
-    .add('Drawer', () => <AppDrawer />);
