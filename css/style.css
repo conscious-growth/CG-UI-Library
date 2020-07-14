@@ -72,8 +72,19 @@ li {
   margin-bottom: 20px !important;
 }
 
-.ant-btn {
+.app-header .ant-btn {
   border-radius: 5px !important;
   padding: 0px 6px !important;
   height: 26px !important;
+}
+.ant-table-thead > tr > th {
+  background-color: #ffffff !important;
+}
+
+.ant-layout {
+  background-color: #ffffff !important;
+}
+
+input {
+  border-radius: 5px !important;
 }

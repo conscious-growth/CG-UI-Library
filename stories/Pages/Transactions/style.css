@@ -1,0 +1,13 @@
+.filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-wrapper > .ant-form-item {
+  margin: 0 10px 10px 0;
+}
+.filter-wrapper > .ant-form-item:last-of-type {
+  margin-right: 0;
+}

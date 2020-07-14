@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  z-index: 2;
+  min-height: 175px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #39d884;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: 0;
+  box-shadow: 3px 3px 25px -8px rgba(0, 0, 0, 0.75);
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+  .card-chip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 30px;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 20px;
+    background-color: #f5f4f9;
+    border-radius: 3px;
+    span {
+      display: block;
+      width: 10px;
+      height: 5px;
+      border-radius: 5px;
+      border: 0.25px solid #322968;
+      margin-right: 5px;
+      margin-bottom: 1px;
+    }
+  }
+  .card-shadow {
+    position: absolute;
+    bottom: -130px;
+    z-index: 0;
+    width: 420px;
+    min-height: 200px;
+    transform: rotate(-30deg);
+    background-color: #39d17d;
+  }
+}

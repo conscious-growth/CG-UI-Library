@@ -1,0 +1,44 @@
+.app-sider {
+  color: #f8f8f8;
+  box-shadow: -7px 0px 13px 0px rgb(0, 0, 0);
+  .fixed {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 255px;
+
+    .logo {
+      margin-top: 1em;
+      padding: 0 15px;
+    }
+
+    & > .ant-menu {
+      margin-top: 115px;
+    }
+    .ant-menu {
+      background: transparent;
+      .ant-menu-item-selected {
+        border-left: 4px solid #1dce6d;
+        background-color: rgba(124, 131, 173, 0.3);
+        .anticon {
+          color: #1dce6d;
+        }
+      }
+    }
+    .footer {
+      margin-top: auto;
+    }
+  }
+  /* Collapsed sider styles */
+  &.ant-layout-sider-collapsed .footer .collapse {
+    text-align: justify;
+  }
+  &.ant-layout-sider-collapsed .collapse-button {
+    padding-left: 16px !important;
+  }
+  &.ant-layout-sider-collapsed .logo {
+    padding-left: 20px;
+  }
+}

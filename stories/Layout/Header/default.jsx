@@ -32,26 +32,22 @@ const menu = (
       }
     >
       <Menu.Item key="0">
-        <a target="_blank" rel="noopener noreferrer" href="settings/profile">
+        <a rel="noopener noreferrer" href="/settings/profile">
           My profile
         </a>
       </Menu.Item>
       <Menu.Item key="1">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="settings/notifications"
-        >
+        <a rel="noopener noreferrer" href="/settings/notifications">
           Notifications
         </a>
       </Menu.Item>
       <Menu.Item key="2">
-        <a target="_blank" rel="noopener noreferrer" href="settings/language">
+        <a rel="noopener noreferrer" href="/settings/language">
           Language
         </a>
       </Menu.Item>
       <Menu.Item key="3">
-        <a target="_blank" rel="noopener noreferrer" href="settings/password">
+        <a rel="noopener noreferrer" href="/settings/password">
           Change password
         </a>
       </Menu.Item>
@@ -61,34 +57,22 @@ const menu = (
       key="g2"
       title={
         <span>
-          <BankOutlined /> Buisness Details
+          <BankOutlined /> Business Details
         </span>
       }
     >
       <Menu.Item key="4">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="settings/buisness/profile"
-        >
-          Buisness profile
+        <a rel="noopener noreferrer" href="/business/profile">
+          Business profile
         </a>
       </Menu.Item>
       <Menu.Item key="5">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="settings/buisness/members"
-        >
+        <a rel="noopener noreferrer" href="/business/members">
           Members
         </a>
       </Menu.Item>
       <Menu.Item key="6">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="settings/buisness/labels"
-        >
+        <a rel="noopener noreferrer" href="/business/labels">
           Manage labels
         </a>
       </Menu.Item>
@@ -117,19 +101,15 @@ export default () => {
                 style={{ fontSize: "12px", display: "block" }}
                 type="secondary"
                 className="subtext"
-                ellipsis
               >
                 Balance
               </Typography.Text>
-              <Typography.Text
-                type="strong"
-                style={{ fontSize: "16px" }}
-                ellipsis
-              >
+              <Typography.Text strong style={{ fontSize: "16px" }}>
                 {`${balance.toLocaleString("DE")} ${currency}`}
               </Typography.Text>
             </div>
             <Button
+              size="small"
               style={{ alignSelf: "flex-end", marginLeft: "10px" }}
               onClick={() => setBalance(balance + 1000)}
             >
@@ -138,32 +118,26 @@ export default () => {
             </Button>
           </div>
           <div className="user-dashboard">
-            <div className="search">
-              <SearchOutlined />
+            <div style={{ marginRight: "10px" }}>
+              <Badge count={12}>
+                <BellOutlined />
+              </Badge>
             </div>
             <div className="two-rows-wrapper user-info">
-              <Typography.Text
-                type="strong"
-                style={{ fontSize: "16px" }}
-                ellipsis
-              >
-                {organization}
+              <Typography.Text strong style={{ fontSize: "16px" }}>
+                {user}
               </Typography.Text>
               <Typography.Text
                 style={{ fontSize: "12px", display: "block" }}
                 type="secondary"
                 className="subtext"
-                ellipsis
               >
-                {user}
+                {organization}
               </Typography.Text>
             </div>
             <Dropdown overlay={menu}>
-              <Avatar style={{ marginRight: "10px" }} />
+              <Avatar />
             </Dropdown>
-            <Badge dot>
-              <BellOutlined />
-            </Badge>
           </div>
         </Header>
       </Layout>
@@ -188,11 +162,12 @@ export const AppHeader = () => {
           >
             Balance
           </Typography.Text>
-          <Typography.Text type="strong" style={{ fontSize: "16px" }}>
+          <Typography.Text strong style={{ fontSize: "16px" }}>
             {`${balance.toLocaleString("DE")} ${currency}`}
           </Typography.Text>
         </div>
         <Button
+          size="small"
           style={{ alignSelf: "flex-end", marginLeft: "10px" }}
           onClick={() => setBalance(balance + 1000)}
         >
@@ -201,27 +176,26 @@ export const AppHeader = () => {
         </Button>
       </div>
       <div className="user-dashboard">
-        <div className="search">
-          <SearchOutlined />
+        <div style={{ marginRight: "10px" }}>
+          <Badge count={12}>
+            <BellOutlined />
+          </Badge>
         </div>
         <div className="two-rows-wrapper user-info">
-          <Typography.Text type="strong" style={{ fontSize: "16px" }}>
-            {organization}
+          <Typography.Text strong style={{ fontSize: "16px" }}>
+            {user}
           </Typography.Text>
           <Typography.Text
             style={{ fontSize: "12px", display: "block" }}
             type="secondary"
             className="subtext"
           >
-            {user}
+            {organization}
           </Typography.Text>
         </div>
         <Dropdown overlay={menu}>
-          <Avatar style={{ marginRight: "10px" }} />
+          <Avatar />
         </Dropdown>
-        <Badge dot>
-          <BellOutlined />
-        </Badge>
       </div>
     </Header>
   );
